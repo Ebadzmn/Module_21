@@ -1,0 +1,447 @@
+{
+	"info": {
+		"_postman_id": "af259601-0e35-4fbc-8941-c54ffc30a102",
+		"name": "Assignment22",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28978177"
+	},
+	"item": [
+		{
+			"name": "Add Sales",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Product\" : \"Mouse3\",\r\n    \"quantity\" : 17,\r\n    \"price\" : 17000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sales",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"get"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Sales",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/sales/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sales",
+								"get"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1329"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"531-CaeamaHfj44Qd5av615mc0y9Lhw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Sep 2023 08:53:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Sale fetched successfully\",\n    \"result\": [\n        {\n            \"_id\": \"64fb701addb87382ce03c0d3\",\n            \"Product\": \"Laptop\",\n            \"quantity\": 2,\n            \"price\": 20000,\n            \"createdAt\": \"2023-09-08T19:03:54.344Z\",\n            \"updatedAt\": \"2023-09-08T19:03:54.344Z\"\n        },\n        {\n            \"_id\": \"64fb7030ddb87382ce03c0d5\",\n            \"Product\": \"Mobile\",\n            \"quantity\": 3,\n            \"price\": 30000,\n            \"createdAt\": \"2023-09-08T19:04:16.721Z\",\n            \"updatedAt\": \"2023-09-08T19:04:16.721Z\"\n        },\n        {\n            \"_id\": \"64fb703addb87382ce03c0d7\",\n            \"Product\": \"Mobile\",\n            \"quantity\": 5,\n            \"price\": 50000,\n            \"createdAt\": \"2023-09-08T19:04:26.074Z\",\n            \"updatedAt\": \"2023-09-08T19:04:26.074Z\"\n        },\n        {\n            \"_id\": \"64fb704fddb87382ce03c0d9\",\n            \"Product\": \"EarPhone\",\n            \"quantity\": 10,\n            \"price\": 10000,\n            \"createdAt\": \"2023-09-08T19:04:47.805Z\",\n            \"updatedAt\": \"2023-09-08T19:04:47.805Z\"\n        },\n        {\n            \"_id\": \"64fb705addb87382ce03c0db\",\n            \"Product\": \"EarPhone\",\n            \"quantity\": 20,\n            \"price\": 20000,\n            \"createdAt\": \"2023-09-08T19:04:58.588Z\",\n            \"updatedAt\": \"2023-09-08T19:04:58.588Z\"\n        },\n        {\n            \"_id\": \"64fb706dddb87382ce03c0dd\",\n            \"Product\": \"Mouse\",\n            \"quantity\": 15,\n            \"price\": 15000,\n            \"createdAt\": \"2023-09-08T19:05:17.699Z\",\n            \"updatedAt\": \"2023-09-08T19:05:17.699Z\"\n        },\n        {\n            \"_id\": \"64fb707bddb87382ce03c0df\",\n            \"Product\": \"Mouse\",\n            \"quantity\": 17,\n            \"price\": 17000,\n            \"createdAt\": \"2023-09-08T19:05:31.029Z\",\n            \"updatedAt\": \"2023-09-08T19:05:31.029Z\"\n        },\n        {\n            \"_id\": \"64fd8252f74d50599d324078\",\n            \"Product\": \"Mouse3\",\n            \"quantity\": 17,\n            \"price\": 17000,\n            \"createdAt\": \"2023-09-10T08:46:10.804Z\",\n            \"updatedAt\": \"2023-09-10T08:46:10.804Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "TotalRevenue",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/total-revenue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"total-revenue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sale quantity",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/quantity-by-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"quantity-by-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sale quantity TOP",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/top-products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"top-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Average",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/average-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"average-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RevenueByMonth",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/revenue-by-month",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"revenue-by-month"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "highestOne day",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/highest-quantity-sold",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"highest-quantity-sold"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Selary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Employee\" : \"EbadTWO\",\r\n    \"Salary\" : 50000,\r\n    \"Department\" : \"Mobile\",\r\n    \"Price\" : 20000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/add-salary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"add-salary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department Salary Expense",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sales/department-salary-expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sales",
+						"department-salary-expense"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
